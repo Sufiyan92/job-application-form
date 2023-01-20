@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.container {
+    max-width: 600px;
+    min-height: 90vh;
+    padding: 40px;
+    background-color: white;
+    margin: 50px auto 50px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(49, 49, 49);
+
+
+}
+
+
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Top----- */
+.form-Container-top {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    min-height: 200px;
+}
+
+/* middle----- */
+.form-Container-middle {
+    display: grid;
+}
+
+/* bottom----- */
+
+.form-Container-bottom {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    min-height: 200px;
+}
+
+#cv {
+    border: solid 1px rgb(122, 122, 122);
+    padding: 8px;
+}
+
+/* Form styles--------------------- */
+
+.formInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formInputs label {
+    margin-bottom: 5px;
+}
+
+.formInputs input {
+    margin-top: 2ppx;
+    height: 40px;
+    width: 250px;
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+}
+
+button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(51, 51, 51);
+    box-shadow: 0px 0px 20px rgb(107, 107, 107);
+}
+
+
+/* Media Query----------------------- */
+
+@media screen and () and () {
+
+    .form-Container-top .form-Container-bottom {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        min-height: 200px;
+    }
+
+
+}
