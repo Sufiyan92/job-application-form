@@ -33,6 +33,7 @@ body {
 .form-Container-top {
     display: grid;
     min-height: 100vh;
+    column-gap: 10px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     min-height: 200px;
@@ -48,6 +49,7 @@ body {
 .form-Container-bottom {
     display: grid;
     min-height: 100vh;
+    column-gap: 10px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     min-height: 200px;
@@ -66,14 +68,16 @@ body {
     justify-content: center;
 }
 
-.formInputs label {
-    margin-bottom: 5px;
-}
+.formInputs label {}
 
 .formInputs input {
     margin-top: 2ppx;
     height: 40px;
-    width: 250px;
+    margin: 10px 0 0px 0;
+}
+
+input:focus {
+    outline-color: rgb(8, 0, 255);
 }
 
 .btn {
@@ -88,26 +92,30 @@ button {
     font-weight: bolder;
     background-color: rgb(51, 51, 51);
     color: white;
+    transition: .2s ease-in;
+
 }
 
 button:hover {
     background-color: white;
     color: rgb(51, 51, 51);
     box-shadow: 0px 0px 20px rgb(107, 107, 107);
+    transition: .5s ease-out;
 }
 
 
 /* Media Query----------------------- */
 
-@media screen and () and () {
+@media screen and (max-width:600px) {
 
-    .form-Container-top .form-Container-bottom {
-        display: grid;
-        min-height: 100vh;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        min-height: 200px;
+    .form-Container-top {
+        display: flex;
+        flex-direction: column;
     }
 
+    .form-Container-bottom {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
